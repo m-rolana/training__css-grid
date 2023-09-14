@@ -1,0 +1,310 @@
+@import "./reset";
+
+@font-face {
+    font-family: "MacPaw Fixel Text";
+    src: url("../assets/font/FixelText-Regular.eot");
+    src: url("../assets/font/FixelText-Regular.eot?#iefix")
+        format("embedded-opentype"),
+      url("../assets/font/FixelText-Regular.woff2") format("woff2"),
+      url("../assets/font/FixelText-Regular.woff") format("woff"),
+      url("../assets/font/FixelText-Regular.ttf") format("truetype"),
+      url("../assets/font/FixelText-Regular.svg#FixelText-Regular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "MacPaw Fixel Text";
+    src: url("../assets/font/FixelText-Bold.eot");
+    src: url("../assets/font/FixelText-Bold.eot?#iefix")
+        format("embedded-opentype"),
+      url("../assets/font/FixelText-Bold.woff2") format("woff2"),
+      url("../assets/font/FixelText-Bold.woff") format("woff"),
+      url("../assets/font/FixelText-Bold.ttf") format("truetype"),
+      url("../assets/font/FixelText-Bold.svg#FixelText-Bold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "MacPaw Fixel Text";
+    src: url("../assets/font/FixelText-Medium.eot");
+    src: url("../assets/font/FixelText-Medium.eot?#iefix")
+        format("embedded-opentype"),
+      url("../assets/font/FixelText-Medium.woff2") format("woff2"),
+      url("../assets/font/FixelText-Medium.woff") format("woff"),
+      url("../assets/font/FixelText-Medium.ttf") format("truetype"),
+      url("../assets/font/FixelText-Medium.svg#FixelText-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: "MacPaw Fixel Text";
+    background-color: #101111;
+    color: rgba(255, 255, 255, 0.75);
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  b {
+    font-weight: 700;
+  }
+  
+  a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+  }
+  
+  .regular-button {
+    height: 59px;
+    padding: 13px 40px;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  
+  .regular-button_filled {
+    background-color: #fff;
+    color: #101111;
+    border: 0px;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: 84px 1fr 50px;
+    width: 100%;
+  }
+  
+  .header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 40px 1fr 70px;
+    align-items: center;
+    row-gap: 40px;
+    padding: 18px 76px;
+  }
+  
+  .header__logo {
+    grid-column: 1 / 2;
+    width: 39px;
+    height: 30px;
+    padding: 0 38px;
+  }
+  
+  .header__menu {
+    grid-column: 2 / 3;
+  }
+  
+  .header__menu-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: fit-content(300px);
+    align-items: center;
+    justify-content: end;
+    line-height: 28px;
+  }
+  
+  .header__menu-item {
+    font-size: 18px;
+    margin-right: 40px;
+  }
+  
+  .header__menu-item-button{
+    color: #c4ebff;
+    background-color: rgba(99, 133, 150, 0.5);
+    padding: 9px 30px;
+    height: auto;
+  }
+  
+  .header__contacts {
+    grid-column: 3 / 4;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 14px;
+  }
+  
+  .main {
+    grid-area: main;
+    display: grid;
+    grid-auto-rows: minmax(auto, 1024px);
+  }
+  
+  .screen-1 {
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    gap: 38px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 500;
+  }
+  
+  .description {
+    width: 650px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .screen-2 {
+    display: grid;
+    grid-template-rows: 261px 1fr;
+    justify-content: center;
+  }
+  
+  .gallery {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 37px 0;
+  }
+  
+  .gallery__item {
+    width: 187px;
+    height: 187px;
+  }
+  
+  .featured {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 39px 316px;
+    gap: 74px;
+    padding: 131px 76px;
+  }
+  
+  .mini_title {
+    text-align: center;
+    font-size: 26px;
+    line-height: 39px;
+    font-weight: 700;
+  }
+  
+  .featured__articles {
+    display: grid;
+    gap: 28px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .article {
+    display: grid;
+    grid-template-rows: 1fr 60px;
+    border-radius: 28px;
+    border: 1px solid #565656;
+  }
+  
+  .article__main {
+    padding: 47px 40px;
+  }
+  
+  .article__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  
+  .article__description {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 35px;
+  }
+  
+  .article__link {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.75);
+  
+    padding: 20px 40px;
+    border-top: 1px solid #565656;
+    align-self: center;
+  
+    background-image: url("./assets/img/read_more.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 90%;
+  }
+  
+  .screen-3 {
+    display: grid;
+    grid-template: 1fr 2fr / 1fr;
+    gap: 130px;
+    margin: 130px 76px;
+  }
+  
+  .buy-punk {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 50%));
+    align-items: start;
+  }
+  
+  .buy-punk__title {
+    grid-column: 1 / 2;
+    font-size: 53px;
+    font-weight: 500;
+    line-height: 67px;
+    letter-spacing: -2px;
+  }
+  
+  .buy-punk__description {
+    grid-column: 2 / 3;
+  }
+  
+  .buy-punk__description p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31px;
+    margin-bottom: 30px;
+  }
+  
+  .buy-punk__description button {
+    margin-right: 20px;
+    width: fit-content;
+  }
+  
+  .lot {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-column: 1fr 1fr;
+    gap: 19px;
+    grid-auto-rows: minmax(auto, 162px);
+    grid-template-columns: repeat(2, minmax(auto, 50%));
+    align-items: start;
+  }
+  
+  .lot__description {
+    grid-column: 1 / 2;
+    width: 634px;
+    padding: 38px 117px 38px 38px;
+    border-radius: 28px;
+    border: 1px solid #565656;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+  }
+  
+  .lot__description_highlighted {
+    background-color: #638596;
+  }
+  
+  .lot__image {
+    grid-row: 1 / 5;
+    grid-column: 2 / 3;
+    width: 634px;
+    height: 634px;
+    border-radius: 37px;
+    margin-left: 20px;
+  }
+  
