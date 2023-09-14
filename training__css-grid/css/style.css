@@ -99,7 +99,6 @@ a {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
-
 .regular-button_filled {
   background-color: #fff;
   color: #101111;
@@ -129,7 +128,6 @@ a {
   row-gap: 40px;
   padding: 18px 76px;
 }
-
 .header__logo {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -138,13 +136,11 @@ a {
   height: 30px;
   padding: 0 38px;
 }
-
 .header__menu {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
 }
-
 .header__menu-list {
   display: -ms-grid;
   display: grid;
@@ -158,19 +154,16 @@ a {
           justify-content: end;
   line-height: 28px;
 }
-
 .header__menu-item {
   font-size: 18px;
   margin-right: 40px;
 }
-
 .header__menu-item-button {
   color: #c4ebff;
   background-color: rgba(99, 133, 150, 0.5);
   padding: 9px 30px;
   height: auto;
 }
-
 .header__contacts {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -236,7 +229,6 @@ a {
   grid-auto-flow: column;
   padding: 37px 0;
 }
-
 .gallery__item {
   width: 187px;
   height: 187px;
@@ -253,20 +245,19 @@ a {
   gap: 74px;
   padding: 131px 76px;
 }
-
-.mini_title {
-  text-align: center;
-  font-size: 26px;
-  line-height: 39px;
-  font-weight: 700;
-}
-
 .featured__articles {
   display: -ms-grid;
   display: grid;
   gap: 28px;
   -ms-grid-columns: 1fr 28px 1fr 28px 1fr;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.mini_title {
+  text-align: center;
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 700;
 }
 
 .article {
@@ -277,23 +268,19 @@ a {
   border-radius: 28px;
   border: 1px solid #565656;
 }
-
 .article__main {
   padding: 47px 40px;
 }
-
 .article__title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 18px;
 }
-
 .article__description {
   font-size: 23px;
   font-weight: 400;
   line-height: 35px;
 }
-
 .article__link {
   text-decoration: none;
   font-size: 20px;
@@ -332,7 +319,6 @@ a {
       -ms-flex-align: start;
           align-items: start;
 }
-
 .buy-punk__title {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -342,20 +328,17 @@ a {
   line-height: 67px;
   letter-spacing: -2px;
 }
-
 .buy-punk__description {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
 }
-
 .buy-punk__description p {
   font-size: 20px;
   font-weight: 400;
   line-height: 31px;
   margin-bottom: 30px;
 }
-
 .buy-punk__description button {
   margin-right: 20px;
   width: -webkit-fit-content;
@@ -378,7 +361,6 @@ a {
       -ms-flex-align: start;
           align-items: start;
 }
-
 .lot__description {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -391,11 +373,9 @@ a {
   font-weight: 500;
   line-height: 42px;
 }
-
 .lot__description_highlighted {
   background-color: #638596;
 }
-
 .lot__image {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
