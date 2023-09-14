@@ -63,20 +63,20 @@ table {
   font-family: "MacPaw Fixel Text";
   src: url("../assets/font/FixelText-Bold.eot");
   src: url("../assets/font/FixelText-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/font/FixelText-Bold.woff2") format("woff2"), url("../assets/font/FixelText-Bold.woff") format("woff"), url("../assets/font/FixelText-Bold.ttf") format("truetype"), url("../assets/font/FixelText-Bold.svg#FixelText-Bold") format("svg");
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "MacPaw Fixel Text";
   src: url("../assets/font/FixelText-Medium.eot");
   src: url("../assets/font/FixelText-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/font/FixelText-Medium.woff2") format("woff2"), url("../assets/font/FixelText-Medium.woff") format("woff"), url("../assets/font/FixelText-Medium.ttf") format("truetype"), url("../assets/font/FixelText-Medium.svg#FixelText-Medium") format("svg");
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 body {
   font-family: "MacPaw Fixel Text";
   background-color: #101111;
-  color: rgba(255, 255, 255, 0.75);
+  color: #fff;
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
@@ -85,7 +85,7 @@ b {
 }
 
 a {
-  color: rgba(255, 255, 255, 0.75);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -97,7 +97,7 @@ a {
   font-weight: 500;
   background-color: transparent;
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid #565656;
 }
 .regular-button_filled {
   background-color: #fff;
@@ -157,6 +157,7 @@ a {
 .header__menu-item {
   font-size: 18px;
   margin-right: 40px;
+  color: rgba(255, 255, 255, 0.75);
 }
 .header__menu-item-button {
   color: #c4ebff;
@@ -285,7 +286,6 @@ a {
   text-decoration: none;
   font-size: 20px;
   line-height: 21px;
-  color: rgba(255, 255, 255, 0.75);
   padding: 20px 40px;
   border-top: 1px solid #565656;
   -ms-flex-item-align: center;
